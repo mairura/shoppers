@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.cart_header {
+    padding: 10px;
+    line-height: 40px;
+    background: rgba(32, 32, 95, 0.534);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+}
+.container_cart {
+    margin-left: 50px;
+}
+.total h6{
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: .5px;
+}
+.cart_table {
+    width: 100%;
+} 
+tbody td:nth-child(1){
+    height: 100%;
+}
+tbody img {
+    margin: 10px;
+    width: 120px;
+}
+tbody td:nth-child(2){
+    font-size: 18px;
+} 
+tbody td:nth-child(5) .btn{
+    padding: 3px 5px;
+    margin: 10px;
+    background-color: rgb(11, 14, 11);
+    border: none;
+    border-radius: 3px;
+    color: rgb(243, 237, 237);
+    cursor: pointer;
+}
+tbody td:nth-child(5) .btn_delete{
+    padding: 5px;
+    margin-left: 15px;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.container_total {
+    padding: 15px;
+    text-align: center; 
+}
+.container_buttons{
+    padding: 10px;
+    text-align: center;   
+}
+.container_buttons_clear{
+    padding: 7px 10px;
+    margin-bottom: 50px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.container_buttons_purchase{
+    padding: 7px 10px;
+    margin: 5px 15px 50px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.stripe{
+    background-color: rgb(0, 19, 128);
+}
+
+
+
+

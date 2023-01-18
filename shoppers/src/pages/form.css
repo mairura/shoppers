@@ -1,0 +1,121 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(230, 235, 240);
+    box-shadow: 2px 3px 16px 2px #000;
+}
+.register_form{
+    padding: 15px 25px;
+}
+.register label{
+    margin: auto;
+}
+.register h4{
+    text-align: center;
+    font-size: bold;
+}
+hr{
+    width: 90%;
+    font-weight: bold;
+}
+.register label {
+    font-size: 20px;
+}
+.register input{
+    border: none;
+    height: 40px;
+    width: auto;
+    padding: 10px;
+}
+.register p{
+    margin: 0 25px;
+}
+.register_form input:nth-child(3){
+    width: 82%;
+}
+.signout{
+    width: 90%;
+    font-size: 15px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 55px;
+}
+.google_icon{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.blog_post{
+    margin: 20px;
+}
+.blog_post h4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blog_post_row {
+    display: flex;
+}
+.col_blog{
+    margin: 10px;
+    text-align: center;
+}
+.profile img {
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;  
+}
+.col p{
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.offers{
+    margin-top: 50px;
+    text-align: center;
+}
+.offers button {
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px;
+    color: #fff;
+    margin: 30px;
+}
+@media screen and (max-width:1170px ){
+    .blog_post_row{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+@media screen and (max-width: 730px ){
+    .blog_post_row{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .profile img{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 580px){
+    .profile img{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 530px){
+    .blog_post_row{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

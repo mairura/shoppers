@@ -1,0 +1,129 @@
+.footer{
+    background-color: rgb(50, 50, 139);
+    /* height: auto; */
+    /* width:100%; */
+    color: white;
+    position: relative;
+}
+.container{
+    display: flex;
+    padding-top: 70px;
+}
+.col{
+    width: 200px;
+}
+.col_1 a{
+    text-decoration: none;
+    display: block;
+    color: rgb(167, 155, 155);
+    padding: 4px;
+}
+/*  .col_1 a:hover {
+    color: blue;
+} */
+.container h5{
+    padding-bottom: 10px;
+}
+.container p{
+    font-size: 14px;
+    color: rgb(167, 155, 155);
+}
+input{
+    margin-bottom: 15px;
+}
+.email{
+    height: 35px;
+    padding: 4px;
+}
+.footer_button{
+    margin-left: 10px;
+    height: 35px;
+    width: 70px;
+    padding: 4px 7px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.social a{
+    font-size: 23px;
+    color: #fff;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.social a:hover{
+    color: orange;
+}
+.react_whatsapp {
+    border: none;
+    background-color: transparent;
+}
+.copyright{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.copyright i{
+    color: orange;
+}
+@media screen and (max-width: 1400px) {
+    .email{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .footer{
+        height: auto;
+    }
+    .email{
+        width: 200px;
+        margin-right: 5px;
+    }
+    .footer_button {
+        font-size: 12px;
+        margin: 0;
+    }
+    .copyright{
+        padding-bottom: 20px;
+    }
+  
+}
+@media screen and (max-width:480px) {
+    .container {
+        display: block;;
+    }
+    .col{
+        margin: 0 30px;
+        padding:  20px;
+        width: auto;
+    }
+    h5 {
+        padding: 0;
+        margin: 0;
+    }
+    .footer_button {
+        font-size: 14px;
+        margin-left: 6px;
+        padding: 1px 13px;
+    }
+    .copyright{
+        width: auto;
+        letter-spacing: 0;
+    }
+}
+@media screen and (max-width: 300px) {
+    .col input{
+        width: 100%;
+    }
+    /* .footer_button{
+        margin-bottom: 10px;
+    } */
+}

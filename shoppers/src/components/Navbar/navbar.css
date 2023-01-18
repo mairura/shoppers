@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: #426aeb;
+    width: 100%;
+    height: 100px;
+    /* position: relative; */
+}
+nav .logo{
+    font-weight: bold;
+    margin-left: 100px;
+    cursor: pointer;
+}
+nav .icon a {
+    font-size: 13px;
+    margin-left: 2px;
+}
+nav img {
+    height: 100px;
+    /* color: white; */
+}
+nav ol {
+    float: right;
+    margin-right: 40px;
+    align-items: center;
+}
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+    line-height: 70px;
+    align-items: center;
+    justify-content: center;
+    /* text-transform: uppercase; */
+    font-size: 18px;
+    text-align: center;
+    padding-top: 13px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+nav a:hover {
+    color: orange;
+}
+nav a:after {
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    background-color: orange;
+    width: 100%;
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+nav a:nth-child(7):after{
+    content: "";
+    background-color: transparent;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+nav .icon {
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+label .sigin {
+    font-size: 12px;
+    margin-left: 8px;  
+    color: #fff;   
+}
+.icon_cart {
+    margin: 0 30px;
+    cursor: pointer;
+}
+.cart {
+    font-size: 22px;
+    color: #fff;
+    line-height: 80px;
+}
+.icon_cart span:nth-child(2){
+    padding: .5px 6px;
+    margin: 0 5px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    /* font-weight: bold; */
+    border-radius: 50px;
+    position: relative;
+    top: -17px;
+}
+nav .icon_bars{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin: 20px 50px;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 1080px) {
+    /* nav {
+        width: 100%;
+    } */
+    nav .logo {
+        margin-left: 40px;
+    }
+    nav ol {
+        margin-right: 15px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    nav .icon {
+        font-size: 17px;
+    }
+    .icon_cart{
+        margin: 0 15px;
+    }
+    .cart{
+        font-size: 16px;
+    }
+    .icon_cart span:nth-child(2){
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* nav {
+        text-align: center;
+    } */
+    nav .icon_bars{
+        display: block;  
+    }
+    /* nav img {
+        display: none;    
+    } */
+    nav ol{
+        position: fixed;
+        width: 50%;
+        height: 60vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s ease;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    .icon, .icon_cart,nav a:after{
+        display: none;
+    }
+    /* nav ol.show{
+        left: 0;
+    } */
+}
